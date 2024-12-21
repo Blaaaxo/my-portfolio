@@ -17,7 +17,7 @@ const stats = [
     },
     {
         number: 300,
-        text: 'Commits en GitHub'
+        text: 'Commits en Git'
     }
 ]
 
@@ -38,7 +38,7 @@ export default function Stats() {
                             />
                             <p className={`${
                                 stat.text.length < 15 ? 'max-w-[100px]': 'max-w-[150px]'
-                            }`}>{stat.text}</p>
+                            } leading-snug text-white`}>{stat.text}</p>
                         </div>
                     ))}
                 </div>

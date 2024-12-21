@@ -4,6 +4,8 @@ import React from 'react'
 import { Sheet, SheetContent, SheetTrigger } from './ui/sheet'
 import { CiMenuFries } from 'react-icons/ci'
 import Link from 'next/link'
+import { DialogTitle } from '@radix-ui/react-dialog'
+import { VisuallyHidden } from '@radix-ui/react-visually-hidden'
 
 const links = [
     {
@@ -37,6 +39,9 @@ export default function NavResponsive() {
                     <CiMenuFries className='text-[32px] text-accent' />
                 </SheetTrigger>
                 <SheetContent className='flex flex-col gap-8'>
+                    <VisuallyHidden>
+                        <DialogTitle>Navegación</DialogTitle>
+                    </VisuallyHidden>
                     {/* logo */}
                     <div className='mt-32 mb-40 text-center text-2xl'>
                         <Link href={'/'}>

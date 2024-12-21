@@ -14,7 +14,7 @@ const services = [
     {
         number: '02',
         title: "Desarrollo FullStack",
-        description: "Creación de aplicaciones web robustas y escalables utilizando tecnologías modernas. Especializado en plataformas e-learning, sistemas de gestión y aplicaciones empresariales.",
+        description: "Creación de aplicaciones web robustas y escalables utilizando tecnologías modernas. Desarrollo de APIs, integraciones con servicios de terceros y soluciones de backend a medida.",
         href: ""
     },
     {

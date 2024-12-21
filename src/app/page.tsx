@@ -1,5 +1,6 @@
 import Photo from "@/components/Photo";
 import Socials from "@/components/Socials";
+import Stats from "@/components/Stats";
 import { Button } from "@/components/ui/button";
 import { Download } from "lucide-react";
 
@@ -15,7 +16,7 @@ export default function Home() {
                             Hola, soy <br /> <span className="text-accent">Brayan Fernandez</span>
                         </h1>
                         <p className="max-w-[500px] mb-9 text-white/80">
-                        Ingeniero Full Stack con capacidad demostrada para crear soluciones eficientes y escalables. Domino múltiples tecnologías y frameworks, transformando requisitos complejos en productos intuitivos que generan valor real para el negocio.
+                            Ingeniero Full Stack especializado en desarrollar soluciones eficientes e intuitivas que transforman ideas en productos de alto impacto.
                         </p>
 
                         {/* botones de redes sociales */}
@@ -36,6 +37,7 @@ export default function Home() {
                     </div>
                 </div>
             </div>
+            <Stats />
         </section>
     );
 }

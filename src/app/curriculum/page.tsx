@@ -163,7 +163,13 @@ function Curriculum() {
                     </TabsList>
 
                     {/* contenido */}
-                    <div className='min-h-[70vh] w-full'>
+                    <motion.div 
+                        initial={{ opacity: 0 }}
+                        animate={{
+                            opacity: 1,
+                            transition: { delay: 0.2, duration: 0.5, ease: 'easeIn' }
+                        }}
+                        className='min-h-[70vh] w-full'>
                         {/* experiencia */}
                         <TabsContent
                             value='experiencia'
@@ -274,7 +280,7 @@ function Curriculum() {
                                 </ul>
                             </div>
                         </TabsContent>
-                    </div>
+                    </motion.div>
                 </Tabs>
             </div>
         </motion.div>

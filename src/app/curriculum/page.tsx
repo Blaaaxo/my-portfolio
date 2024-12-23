@@ -142,12 +142,7 @@ const skills = {
 
 function Curriculum() {
     return (
-        <motion.div
-            initial={{ opacity: 0 }}
-            animate={{
-                opacity: 1,
-                transition: { delay: 0.2, duration: 0.5, ease: 'easeIn' }
-            }}
+        <div
             className="min-h-[80vh] flex items-center justify-center py-12 xl:py-0"
         >
             <div className="container mx-auto">
@@ -163,12 +158,7 @@ function Curriculum() {
                     </TabsList>
 
                     {/* contenido */}
-                    <motion.div 
-                        initial={{ opacity: 0 }}
-                        animate={{
-                            opacity: 1,
-                            transition: { delay: 0.2, duration: 0.5, ease: 'easeIn' }
-                        }}
+                    <div
                         className='min-h-[70vh] w-full'>
                         {/* experiencia */}
                         <TabsContent
@@ -206,7 +196,7 @@ function Curriculum() {
                                 <ScrollArea className='h-[400px]'>
                                     <ul className='grid grid-cols-1 lg:grid-cols-2 gap-[30px]'>
                                         {educacion.items.map((item, index) => (
-                                            <li key={index} className='bg-[#232329] h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1'>
+                                            <li key={index} className='bg-[#232329] min-h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1'>
                                                 <span className='text-accent'>{item.duration}</span>
                                                 <h3 className='text-xl max-w-[260px] min-h-[60px] text-center lg:text-left'>{item.title}</h3>
                                                 <div className='flex items-center gap-3'>
@@ -280,10 +270,10 @@ function Curriculum() {
                                 </ul>
                             </div>
                         </TabsContent>
-                    </motion.div>
+                    </div>
                 </Tabs>
             </div>
-        </motion.div>
+        </div>
     )
 }
 

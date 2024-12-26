@@ -137,7 +137,7 @@ function Proyectos() {
               {/* description */}
               <p className='text-white/60'>{proyecto.description}</p>
               {/* stack */}
-              <ul className='flex gap-4'>
+              <ul className='flex flex-wrap gap-4'>
                 {proyecto.stack.map((stack, index) => (
                   <li key={index} className='text-xl text-accent'>
                     {stack.name}
@@ -158,14 +158,14 @@ function Proyectos() {
             >
               {proyectos.map((proyecto, index) => (
                 <SwiperSlide key={index} className='w-full'>
-                  <div className='h-[460px] relative group flex justify-center items-center bg-pink-50/20'>
+                  <div className='h-[460px] relative group flex justify-center items-center bg-white'>
                     {/* overview */}
                     <div className='absolute top-0 bottom-0 w-full h-full bg-black/10 z-10'></div>
                     <div className='relative w-full h-full'>
                       <Image
                         src={proyecto.image}
                         fill
-                        className='object-cover'
+                        className='object-contain'
                         alt={proyecto.title}
                       />
                     </div>

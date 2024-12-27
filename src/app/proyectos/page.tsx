@@ -55,7 +55,7 @@ const proyectos = [
   {
     number: "03",
     title: "Plataforma E-learning Professional Diving Institute",
-    description: "Lideré el desarrollo de una plataforma de cursos en línea para transformar la presencia digital de una agencia de buceo, permitiendo la venta efectiva de cursos en línea y análisis de datos de ventas.",
+    description: "Lideré el desarrollo de una plataforma de cursos en línea para transformar la presencia digital de una agencia de buceo, permitiendo la venta efectiva de cursos en línea.",
     stack: [
       { name: "PHP" },
       { name: "Laravel" },
@@ -67,9 +67,6 @@ const proyectos = [
       { name: "Tailwind CSS" },
       { name: "JavaScript ES6" },
       { name: "NodeJs" },
-      { name: "Python" },
-      { name: "Pandas" },
-      { name: "Numpy" }
     ],
     image: "/images/proyectos/cursos-pdi.png",
   },

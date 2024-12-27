@@ -3,6 +3,7 @@ import Socials from "@/components/Socials";
 import Stats from "@/components/Stats";
 import { Button } from "@/components/ui/button";
 import { Download } from "lucide-react";
+import Link from "next/link";
 
 export default function Home() {
     return (
@@ -21,10 +22,12 @@ export default function Home() {
 
                         {/* botones de redes sociales */}
                         <div className="flex flex-col xl:flex-row items-center gap-8">
-                            <Button variant={'outline'} size={'lg'} className="uppercase flex items-center gap-2">
-                                <span>Descargar CV</span>
-                                <Download className="text-xl" />
-                            </Button>
+                            <Link href={'https://www.linkedin.com/in/brayan-fernandez-8182b0239/'}>
+                                <Button variant={'outline'} size={'lg'} className="uppercase flex items-center gap-2">
+                                    <span>Descargar CV</span>
+                                    <Download className="text-xl" />
+                                </Button>
+                            </Link>
 
                             <div className="mb-8 xl:mb-0">
                                 <Socials containerStyles="flex gap-6" iconStyles="w-9 h-9 border border-accent rounded-full flex justify-center items-center text-accent text-base hover:bg-accent hover:text-primary hover:transition-all duration-500" />

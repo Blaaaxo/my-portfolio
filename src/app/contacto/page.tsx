@@ -123,12 +123,11 @@ function Contacto() {
           <div className="relative bg-primary p-8 rounded-lg shadow-lg z-10 text-white">
             <h2 className="text-xl font-bold mb-4">Mensaje enviado</h2>
             <p>Tu mensaje ha sido enviado exitosamente.</p>
-            <button
+            <Button
               onClick={closeModal}
-              className="mt-4 bg-accent text-primary py-2 px-4 rounded-full"
             >
               Cerrar
-            </button>
+            </Button>
           </div>
         </div>
       )}

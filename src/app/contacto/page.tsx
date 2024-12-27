@@ -64,7 +64,7 @@ function Contacto() {
           </div>
           
           {/* imagen con movimiento */}
-          <div className='xl:h-[54%] order-1 xl:order-none'>
+          <div className='xl:h-[54%] order-1 xl:order-none xl:mt-24 flex justify-center items-center'>
             <motion.img
               src='/images/contacto.png'
               alt='Imagen de contacto'

@@ -19,7 +19,7 @@ export default function Header() {
                 {/* nav */}
                 <div className="hidden xl:flex items-center gap-8">
                     <Nav />
-                    <Link href={'/contact'}>
+                    <Link href={'/contacto'}>
                         <Button>Contratarme</Button>
                     </Link>
                 </div>
